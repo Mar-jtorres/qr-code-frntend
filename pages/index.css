@@ -4,30 +4,54 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #d5e1ef;
+  background-color: hsl(212, 45%, 89%);
 }
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 650px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   border-radius: 5%;
   background-color: #ffffff;
+  box-shadow: 0 8px 20px #6f6d6da2;
+  width: 20vw;
+ 
 }
 .content__code {
   border-radius: 5%;
+  width: 90%;
 }
 .content__title {
  font-family: "Outfit", Arial, Helvetica, sans-serif;
  font-weight: 700;
  max-width: 80%;
- 
+ font-size: 20px;
+ color: hsl(218, 44%, 22%);
 
 }
 .content__subtitle {
  font-family: "Outfit", Arial, Helvetica, sans-serif ;
- font-size: 15px;
+ font-size: .8rem;
  font-weight: 400;
+ max-width: 80%;
+ margin: 0;
+ color: hsl(216, 15%, 48%);
+
+}
+.attribution {
+ font-size: 11px;
+ font-family: "Outfit", Arial, Helvetica, sans-serif;
+ padding-top: 2em;
+ text-align: center;
+}
+.attribution a {
+   color: hsl(228, 45%, 44%); 
+  }
+
+@media screen and (max-width: 320px) {
+  .content {
+    width: 90vw;
+  }
 }
